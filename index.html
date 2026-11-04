@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MICA – Batch & Profit Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("mica_theme")||"light"}catch(e){}</script>
+</head>
+<body>
+  <header>
+    <b>MICA</b>
+    <nav id="nav" hidden>
+      <a href="#/dashboard" data-r="dashboard">Dashboard</a>
+      <a href="#/batches" data-r="batches">Batches</a>
+      <a href="#/flowchart" data-r="flowchart">Flowchart</a>
+      <a href="#/presets" data-r="presets">Presets</a>
+      <span id="whoami"></span>
+      <button class="ghost" id="theme" title="Toggle light/dark">Theme</button>
+      <button class="ghost" id="logout">Log out</button>
+    </nav>
+  </header>
+  <main id="app"></main>
+  <div id="toasts" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
